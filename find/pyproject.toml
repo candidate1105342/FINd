@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "find"
+version = "0.1.0"
+dependencies = [
+    "numpy",
+    "pillow",
+    "imagehash",
+]
+requires-python = ">=3.11"
+authors = [
+  { name="Candidate 1105342"},
+]
+description = "FINd perceptual hashing algorithm — original and optimized implementations"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/candidate1105342/FINd"
+
+[tool.hatchling.build.targets.wheel]
+packages = ["src/find"]
